@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.markodonovski.teskazadaca.Main3Activity"
+    android:background="@color/dgreen"
+    android:id="@+id/rel1">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Guest"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_marginLeft="15dp"/>
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/spinner"
+        android:text="EDIT USER"
+        android:background="@color/orange"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit"
+        android:layout_toRightOf="@id/spinner"
+        android:text="ADD USER"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/orange"/>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.markodonovski.teskazadaca.Main3Activity"
+        android:background="@color/white"
+        android:layout_below="@id/add"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:text="Change Gender:"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/grupa"
+            android:layout_below="@id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <RadioButton
+                android:text="F"
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:buttonTint="@color/orange"/>
+            <RadioButton
+                android:text="M"
+                android:textColor="@color/green"
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/orange" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/slikaz"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/mujer"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/grupa"/>
+        <ImageView
+            android:id="@+id/slikam"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/man"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/grupa"/>
+
+        <TextView
+            android:id="@+id/imeprezime"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/gray"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="100dp"
+            android:hint="Name Lastname"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/internet"
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/slikam"
+            android:hint="Internet not checked yet"/>
+        <Button
+            android:id="@+id/check"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/internet"
+            android:background="@color/orange"
+            android:layout_marginLeft="10dp"
+            android:text="CHECK INTERNET CONNECTION"/>
+
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.markodonovski.teskazadaca.Main2Activity"
+    android:background="@color/dgreen">
+
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD USER DETAILS:"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/add"
+        android:hint="Name"
+        android:paddingLeft="20dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/text"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/name"
+        android:hint="Lastname"
+        android:paddingLeft="20dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/text"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/lastname"
+        android:hint="Username"
+        android:paddingLeft="20dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/text"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:text="Gender:"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupa"
+        android:layout_below="@id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp">
+    <RadioButton
+        android:text="F"
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:buttonTint="@color/orange"/>
+    <RadioButton
+        android:text="M"
+        android:textColor="@color/white"
+        android:id="@+id/radio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/orange" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/grupa"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="15dp"
+        android:text="NEXT"
+        android:drawableRight="@drawable/right_arrow"/>
+
+</RelativeLayout>
