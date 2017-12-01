@@ -18,7 +18,7 @@ public class Main4Activity extends AppCompatActivity {
     @BindView(R.id.check2)
     Button proveri;
     @BindView(R.id.back)
-    Button nazad;
+    Button nazad ;
     @BindView(R.id.internetcheck)
     TextView internet;
     String net;
